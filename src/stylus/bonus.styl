@@ -2,20 +2,18 @@
 .bonus
   background-color white
   height auto
-  min-height 400px
+  min-height 450px
   width 100%
-  h1.title
-    font-size 2.4rem
-    font-weight bold
-    text-align center
-    margin 30px auto 20px auto
-  h4
-    color var(--colorRed)
-    font-size: 1.1rem
-
-  &-box
+  &-minwrapp
     margin 30px auto
     max-width 1024px
+  &-subtitle
+    color var(--colorRed)
+    &:before
+      content ''
+      width 50px
+      border-bottom 3px solid var(--colorRed)
+  
 
   &-box-info
     width 100%

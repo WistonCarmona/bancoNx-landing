@@ -1,6 +1,7 @@
 
 :root
   --colorRed: #c60000
+  --colorRedDarken: #9e0000
   --colorBase: #333333
   --colorDarkGrey: darkslategrey
   --colorLightGray: #f5f5f5
@@ -19,10 +20,28 @@ body
   max-width 1180px
   margin auto
   padding 0 1em
+  overflow hidden
+
+h1.u-title
+  font-size 2.4em
+  font-weight bold
+  text-align center
+  margin 30px auto 10px auto
+
+h3.u-subtitle
+  font-size 1.2em
+
+p.info
+  line-height 1.2em
+
+hr.line
+  max-width 450px
 
 
-  //secciones
+//secciones
 @import './header.styl'
 @import './banner.styl'
 @import './bonus.styl'
 @import './questions.styl'
+@import './contact.styl'
+@import './footer.styl'

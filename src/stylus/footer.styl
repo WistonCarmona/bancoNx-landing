@@ -1,0 +1,37 @@
+.footer
+  color white
+  background-color var(--colorRed)
+  padding 2em 0
+  &-content
+    // display flex
+    &-items 
+      // display flex
+      align-items center
+  a.link-nexura
+    color var(--colorBase)
+    padding: 0
+    margin 0.2em 0
+    font-weight bold
+    transition all .5s
+    &:hover
+      color white
+  .footer-menu 
+    display flex
+    margin 0
+  ul
+    list-style none
+  li
+    padding 1em 0
+  a
+    color white
+    padding: .8em
+    margin 0 0.2em
+    font-weight bold
+    transition all .5s
+    &:hover
+      color var(--colorBase)
+      font-weight bold
+      text-decoration none
+  @media screen and (max-width: 720px)
+    a
+      display block
