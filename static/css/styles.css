@@ -3,7 +3,7 @@
   --colorRedDarken: #9e0000;
   --colorBase: #333;
   --colorDarkGrey: #2f4f4f;
-  --colorLightGray: #f5f5f5;
+  --colorLightGray: #fbfbfb;
   --colorLine: #e2e2e2;
   --font-openSans: 'Open Sans', sans-serif;
   --font-quicksand: 'Quicksand', sans-serif;
@@ -152,10 +152,40 @@ h1.text-big {
   height: auto;
   min-height: 580px;
 }
+.questions .t-questions {
+  color: var(--colorRed);
+}
 .questions-minwrapp {
-  border: 1px solid #f00;
-  margin: 20px auto;
-  max-width: 800px;
+  margin: 3em auto 1em auto;
+  max-width: 900px;
+}
+.questions-minwrapp .details {
+  margin: 2em 0;
+  padding: 0.2em 0;
+}
+.questions-minwrapp .details transition 0.5s all[open] .details .summary {
+  border-bottom: 1px solid var(--colorLine);
+}
+.questions-minwrapp .details transition 0.5s all[open] .details .summary::-webkit-details-marker {
+  color: var(--colorBase);
+}
+.questions-minwrapp .details .summary {
+  border: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.questions-minwrapp .details .summary:focus {
+  outline: 0;
+}
+.questions-minwrapp .details .summary::-webkit-details-marker {
+  color: var(--colorRed);
+}
+.questions-minwrapp .details .summary::-webkit-details-marker[open] border-bottom 1px solid var(--colorLine)::-webkit-details-marker {
+  color: var(--colorBase);
+}
+.questions-minwrapp .details .info-details {
+  margin: 1.2em 0 1em 0;
+  color: var(--colorDarkGrey);
 }
 .contact {
   min-height: 600px;
@@ -223,12 +253,10 @@ h1.text-big {
   color: #fff;
   padding: 0.8em;
   margin: 0 0.2em;
-  font-weight: bold;
   transition: all 0.5s;
 }
 .footer a:hover {
   color: var(--colorBase);
-  font-weight: bold;
   text-decoration: none;
 }
 @media screen and (max-width: 720px) {

@@ -3,7 +3,37 @@
   width 100%
   height auto
   min-height 580px
+  .t-questions
+    color var(--colorRed)
   &-minwrapp
-    border 1px solid red
-    margin 20px auto
-    max-width 800px
+    // border 1px solid red
+    margin 3em auto 1em auto
+    max-width 900px
+    .details
+      margin 2em 0
+      padding 0.2em 0
+      transition 0.5s all
+        &[open]
+            .details
+              .summary
+                border-bottom 1px solid var(--colorLine)
+                &::-webkit-details-marker
+                  color var(--colorBase)
+      .summary
+        border none
+        font-weight bold
+        font-size 1.1em
+        &:focus
+          outline 0
+        &::-webkit-details-marker
+          color var(--colorRed)
+          &[open]
+            border-bottom 1px solid var(--colorLine)
+                  &::-webkit-details-marker
+                    color var(--colorBase)
+        
+      .info-details
+        margin: 1.2em 0 1em 0
+        color var(--colorDarkGrey)
+        
+            
