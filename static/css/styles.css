@@ -20,6 +20,11 @@ body {
   padding: 0 1em;
   overflow: hidden;
 }
+.space::before {
+  display: block;
+  content: " ";
+  min-height: 60px;
+}
 h1.u-title {
   font-size: 2.4em;
   font-weight: bold;
