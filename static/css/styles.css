@@ -76,6 +76,11 @@ header {
 .banner .box-left {
   padding-top: 2em;
 }
+@media screen and (max-width: 992px) {
+  .banner .box-left {
+    text-align: center;
+  }
+}
 .banner img {
   margin: 30px auto;
   width: 100%;
@@ -158,16 +163,11 @@ h1.text-big {
 .questions-minwrapp {
   margin: 3em auto 1em auto;
   max-width: 900px;
+  padding: 1em;
 }
 .questions-minwrapp .details {
   margin: 2em 0;
   padding: 0.2em 0;
-}
-.questions-minwrapp .details transition 0.5s all[open] .details .summary {
-  border-bottom: 1px solid var(--colorLine);
-}
-.questions-minwrapp .details transition 0.5s all[open] .details .summary::-webkit-details-marker {
-  color: var(--colorBase);
 }
 .questions-minwrapp .details .summary {
   border: none;
@@ -179,9 +179,6 @@ h1.text-big {
 }
 .questions-minwrapp .details .summary::-webkit-details-marker {
   color: var(--colorRed);
-}
-.questions-minwrapp .details .summary::-webkit-details-marker[open] border-bottom 1px solid var(--colorLine)::-webkit-details-marker {
-  color: var(--colorBase);
 }
 .questions-minwrapp .details .info-details {
   margin: 1.2em 0 1em 0;
@@ -230,14 +227,14 @@ h1.text-big {
   align-items: center;
 }
 .footer a.link-nexura {
-  color: var(--colorBase);
+  color: #fff;
+  display: flex;
   padding: 0;
   margin: 0.2em 0;
-  font-weight: bold;
   transition: all 0.5s;
 }
 .footer a.link-nexura:hover {
-  color: #fff;
+  color: var(--colorBase);
 }
 .footer .footer-menu {
   display: flex;
@@ -259,8 +256,14 @@ h1.text-big {
   color: var(--colorBase);
   text-decoration: none;
 }
-@media screen and (max-width: 720px) {
-  .footer a {
+@media screen and (max-width: 768px) {
+  .footer .footer-menu {
     display: block;
+    margin: 0;
+    text-align: center;
+  }
+  .footer li {
+    padding: 0.5em 0;
+    width: 100%;
   }
 }

@@ -9,16 +9,10 @@
     // border 1px solid red
     margin 3em auto 1em auto
     max-width 900px
+    padding 1em
     .details
       margin 2em 0
-      padding 0.2em 0
-      transition 0.5s all
-        &[open]
-            .details
-              .summary
-                border-bottom 1px solid var(--colorLine)
-                &::-webkit-details-marker
-                  color var(--colorBase)
+      padding .2em 0
       .summary
         border none
         font-weight bold
@@ -27,11 +21,7 @@
           outline 0
         &::-webkit-details-marker
           color var(--colorRed)
-          &[open]
-            border-bottom 1px solid var(--colorLine)
-                  &::-webkit-details-marker
-                    color var(--colorBase)
-        
+
       .info-details
         margin: 1.2em 0 1em 0
         color var(--colorDarkGrey)
